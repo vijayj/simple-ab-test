@@ -16,6 +16,12 @@
 		0A697B541C7D31FC00B32E44 /* todosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A697B531C7D31FC00B32E44 /* todosTests.swift */; };
 		0A697B5F1C7D31FC00B32E44 /* todosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A697B5E1C7D31FC00B32E44 /* todosUITests.swift */; };
 		0A697B6D1C7D340800B32E44 /* MainViewTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A697B6C1C7D340800B32E44 /* MainViewTabViewController.swift */; };
+		0A697BAD1C7D50A400B32E44 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A697BAC1C7D50A400B32E44 /* OnboardingViewController.swift */; };
+		0A697BAF1C7D518100B32E44 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A697BAE1C7D518100B32E44 /* TutorialViewController.swift */; };
+		0A697BB11C7D51A100B32E44 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A697BB01C7D51A100B32E44 /* LoginViewController.swift */; };
+		0A697BB31C7D549200B32E44 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A697BB21C7D549200B32E44 /* ModelController.swift */; };
+		0A697BB51C7D894B00B32E44 /* GetStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A697BB41C7D894B00B32E44 /* GetStartedViewController.swift */; };
+		0A697BB71C7D8A6900B32E44 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 0A697BB61C7D8A6900B32E44 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,12 @@
 		0A697B5E1C7D31FC00B32E44 /* todosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todosUITests.swift; sourceTree = "<group>"; };
 		0A697B601C7D31FC00B32E44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A697B6C1C7D340800B32E44 /* MainViewTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewTabViewController.swift; sourceTree = "<group>"; };
+		0A697BAC1C7D50A400B32E44 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		0A697BAE1C7D518100B32E44 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		0A697BB01C7D51A100B32E44 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0A697BB21C7D549200B32E44 /* ModelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
+		0A697BB41C7D894B00B32E44 /* GetStartedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetStartedViewController.swift; sourceTree = "<group>"; };
+		0A697BB61C7D8A6900B32E44 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +93,7 @@
 		0A697B301C7D31FC00B32E44 = {
 			isa = PBXGroup;
 			children = (
+				0A697BB61C7D8A6900B32E44 /* README.md */,
 				0A697B3B1C7D31FC00B32E44 /* todos */,
 				0A697B521C7D31FC00B32E44 /* todosTests */,
 				0A697B5D1C7D31FC00B32E44 /* todosUITests */,
@@ -109,6 +122,11 @@
 				0A697B471C7D31FC00B32E44 /* LaunchScreen.storyboard */,
 				0A697B4A1C7D31FC00B32E44 /* Info.plist */,
 				0A697B6C1C7D340800B32E44 /* MainViewTabViewController.swift */,
+				0A697BAC1C7D50A400B32E44 /* OnboardingViewController.swift */,
+				0A697BAE1C7D518100B32E44 /* TutorialViewController.swift */,
+				0A697BB01C7D51A100B32E44 /* LoginViewController.swift */,
+				0A697BB21C7D549200B32E44 /* ModelController.swift */,
+				0A697BB41C7D894B00B32E44 /* GetStartedViewController.swift */,
 			);
 			path = todos;
 			sourceTree = "<group>";
@@ -262,9 +280,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A697BB11C7D51A100B32E44 /* LoginViewController.swift in Sources */,
 				0A697B6D1C7D340800B32E44 /* MainViewTabViewController.swift in Sources */,
+				0A697BB71C7D8A6900B32E44 /* README.md in Sources */,
 				0A697B411C7D31FC00B32E44 /* SecondViewController.swift in Sources */,
+				0A697BAD1C7D50A400B32E44 /* OnboardingViewController.swift in Sources */,
 				0A697B3D1C7D31FC00B32E44 /* AppDelegate.swift in Sources */,
+				0A697BB31C7D549200B32E44 /* ModelController.swift in Sources */,
+				0A697BB51C7D894B00B32E44 /* GetStartedViewController.swift in Sources */,
+				0A697BAF1C7D518100B32E44 /* TutorialViewController.swift in Sources */,
 				0A697B3F1C7D31FC00B32E44 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
