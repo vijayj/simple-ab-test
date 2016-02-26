@@ -16,9 +16,6 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
     
     override init() {
         super.init()
-        // Create the data model.
-        let dateFormatter = NSDateFormatter()
-        
         let messages = [
             "The best productivity tool ever to be built",
             "All your todos in one place",
@@ -42,7 +39,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
         default:
             // Create a new view controller and pass suitable data.
             let dataViewController = storyboard.instantiateViewControllerWithIdentifier("TutorialViewController") as! TutorialViewController
-            dataViewController.dataObject = self.pageData[index]
+            dataViewController.dataObject = (self.pageData[index],index)
             return dataViewController
         }
         
@@ -64,7 +61,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
         case is LoginViewController:
                 return 2;
         case is TutorialViewController:
-               return pageData.indexOf((viewController as! TutorialViewController).dataObject)!
+               return pageData.indexOf((viewController as! TutorialViewController).dataObject.message)!
         default:
            return NSNotFound;
         }
@@ -73,7 +70,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
     // MARK: - Page View Controller Data Source
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
-        var index = self.indexOfViewController(viewController as! UIViewController)
+        var index = self.indexOfViewController(viewController )
         if (index == 0) || (index == NSNotFound) {
             return nil
         }
@@ -83,7 +80,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
     }
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
-        var index = self.indexOfViewController(viewController as! UIViewController)
+        var index = self.indexOfViewController(viewController )
         if index == NSNotFound {
             return nil
         }
